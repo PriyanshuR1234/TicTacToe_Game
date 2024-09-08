@@ -1,0 +1,30 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css"></link>
+</head>
+<body class="bg-[rgb(200,133,200)] flex items-center justify-center h-screen transition-colors duration-300 relative">
+    <div class="text-center">
+        <h1 class="text-4xl font-bold mb-4 title">Tic Tac Toe</h1>
+        <div id="board" class="board"></div>
+        <div class="mt-4">
+            <button id="resetButton" class="bg-blue-500 text-white px-4 py-2 rounded">Reset</button>
+        </div>
+        <div id="message" class="mt-4 text-2xl font-bold"></div>
+        <div id="turnMessage" class="mt-2 text-xl"></div>
+    </div>
+    <div class="toggle-dark-mode">
+        <input type="checkbox" id="darkModeToggle">
+        <label for="darkModeToggle"></label>
+        <div id="modeText" class="mt-2 text-lg mode-text">Light Mode</div>
+    </div>
+    <div id="winnerOverlay" class="winner-overlay hidden">
+        <h1 id="winnerMessage" class="text-4xl font-bold"></h1>
+        <button id="nextButton">Next Match</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
